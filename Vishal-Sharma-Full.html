@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Sharma - Networking Full Course + HTML Course</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#e2e8f0;line-height:1.7}
+header{background:#0b1226;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #1e293b}
+.logo{font-weight:800;font-size:20px;color:#fff}
+.logo span{color:#38bdf8}
+nav a{color:#94a3b8;text-decoration:none;margin-left:14px;font-size:13px}
+.hero{padding:60px 5%;text-align:center;background:radial-gradient(circle at top,#1e3a8a,#0f172a)}
+.hero h1{font-size:34px;line-height:1.2}
+.hero h1 span{background:linear-gradient(90deg,#38bdf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:#94a3b8;max-width:750px;margin:12px auto 20px;font-size:14px}
+.btn{padding:11px 22px;border-radius:30px;border:none;font-weight:600;cursor:pointer;margin:4px;font-size:13px}
+.btn1{background:#38bdf8;color:#000}
+.btn2{background:#1e293b;color:#fff;border:1px solid #334155}
+section{padding:45px 5%}
+h2{font-size:28px;text-align:center;margin-bottom:6px;color:#fff}
+.sub{text-align:center;color:#94a3b8;margin-bottom:28px;font-size:13px}
+.course-box{background:#0f172a;border:1px solid #334155;border-radius:14px;padding:18px;margin-bottom:18px}
+.course-box h3{color:#f8fafc;font-size:18px;margin-bottom:8px}
+.course-box h4{color:#fbbf24;font-size:14px;margin:12px 0 6px}
+.course-box p{color:#cbd5e1;font-size:13px}
+pre{background:#020617;color:#a5f3fc;padding:12px;border-radius:10px;overflow:auto;font-size:11.5px;margin:10px 0;border:1px solid #1e293b}
+.toc{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-bottom:22px}
+.toc a{background:#1e293b;border:1px solid #334155;padding:5px 12px;border-radius:20px;font-size:11px;color:#cbd5e1;text-decoration:none}
+footer{background:#020617;padding:20px;text-align:center;color:#64748b;font-size:11px}
+ul{margin-left:18px;color:#cbd5e1;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">VISHAL <span>SHARMA</span></div>
+<nav>
+<a href="#networking">Networking Full</a>
+<a href="#htmlcourse">HTML</a>
+</nav>
+</header>
+<div class="hero">
+<h1>Vishal Sharma <span>Computer Institute</span></h1>
+<p>Moranhat ka No.1 Free Education Center - Networking Full Course + HTML Full Course - Hindi Me</p>
+<button class="btn btn1" onclick="document.getElementById('networking').scrollIntoView({behavior:'smooth'})">Networking Full Course</button>
+<button class="btn btn2" onclick="document.getElementById('htmlcourse').scrollIntoView({behavior:'smooth'})">HTML Course</button>
+</div>
+
+<section id="networking">
+<h2>🌐 Networking Full Course - 12 Chapters</h2>
+<p class="sub">By Vishal Sharma - Zero To Expert - Moranhat</p>
+
+<div class="toc">
+<a href="#n1">N1 Intro</a><a href="#n2">N2 Types</a><a href="#n3">N3 OSI 7 Layer</a><a href="#n4">N4 TCP/IP</a>
+<a href="#n5">N5 IP Address</a><a href="#n6">N6 Subnetting</a><a href="#n7">N7 DNS DHCP NAT</a><a href="#n8">N8 Devices</a>
+<a href="#n9">N9 Cabling</a><a href="#n10">N10 Commands</a><a href="#n11">N11 Router Setup</a><a href="#n12">N12 Career</a>
+</div>
+
+<div class="course-box" id="n1">
+<h3>Chapter 1: Networking Kya Hai?</h3>
+<p>2 ya usse zyada computer ko jodna taaki data share ho sake. Jaise ghar me mobile-laptop ek WiFi se jude hai. Office me 1 printer 10 PC use karte hai wo networking hai.</p>
+<p><b>Real Example Moranhat:</b> Tumhari shop me 3 PC aur 1 printer hai. Bina network ke pen-drive se file deni padegi. Network se 1 click me share.</p>
+</div>
+
+<div class="course-box" id="n2">
+<h3>Chapter 2: Network Ke Prakar</h3>
+<p><b>PAN:</b> 10m tak - Bluetooth<br><b>LAN:</b> Ek building - School lab, Cyber cafe, Speed tez<br><b>MAN:</b> Ek city - Moranhat se Dibrugarh tak cable<br><b>WAN:</b> Pure duniya - Internet sabse bada WAN</p>
+</div>
+
+<div class="course-box" id="n3">
+<h3>Chapter 3: OSI Model - 7 Layers (Interview Question)</h3>
+<p>Trick: A P S T N D P - All People Seem To Need Data Processing</p>
+<ul>
+<li>7 Application - Browser, WhatsApp user dekhta hai</li>
+<li>6 Presentation - Encryption, format</li>
+<li>5 Session - Connection banata hai</li>
+<li>4 Transport - TCP/UDP - Data sahi pahucha ki nahi</li>
+<li>3 Network - IP Address - Rasta decide</li>
+<li>2 Data Link - MAC Address - Switch yaha kaam</li>
+<li>1 Physical - Cable, WiFi signal</li>
+</ul>
+</div>
+
+<div class="course-box" id="n4">
+<h3>Chapter 4: TCP/IP Model - Asli Internet Model</h3>
+<pre>Application -> Transport (TCP/UDP) -> Internet (IP) -> Network Access</pre>
+<p><b>TCP vs UDP:</b> TCP = Confirm delivery (WhatsApp), UDP = Fast, no confirm (YouTube Live, Gaming)</p>
+</div>
+
+<div class="course-box" id="n5">
+<h3>Chapter 5: IP Address Full</h3>
+<p>Example: 192.168.1.10 - 4 number 0-255 tak</p>
+<p>Private IP: 192.168.x.x (ghar ke andar)<br>Public IP: Jio/Airtel deta hai internet par</p>
+<pre>Class A: 1-126 (Badi company)
+Class B: 128-191 (Medium)
+Class C: 192-223 (Hum use karte hai)</pre>
+</div>
+
+<div class="course-box" id="n6">
+<h3>Chapter 6: Subnetting (Job ke liye sabse important)</h3>
+<p>Bade network ko chhote tukdo me baantna. Jaise 100 room hotel ko 10-10 room ke floor me.</p>
+<pre>192.168.1.0/24 = 254 device connect
+/24 = 255.255.255.0 = 254 Hosts
+/30 = 2 Hosts (2 router jodne ke liye)</pre>
+</div>
+
+<div class="course-box" id="n7">
+<h3>Chapter 7: DNS, DHCP, NAT</h3>
+<p><b>DNS:</b> google.com ko 142.250.190.14 me badalta hai - Internet ki phonebook<br><b>DHCP:</b> Router auto IP deta hai, manual likhne ki zarurat nahi<br><b>NAT:</b> 1 Public IP se 5 mobile chalana</p>
+</div>
+
+<div class="course-box" id="n8">
+<h3>Chapter 8: Devices - Router, Switch, Hub</h3>
+<ul>
+<li>Router: Alag network jodta hai, Internet laata hai</li>
+<li>Switch: Same network me PC jodta hai, 24 port office me</li>
+<li>Hub: Purana, ab nahi use</li>
+<li>Access Point: WiFi range badhata hai</li>
+<li>Modem: Fiber light ko internet banata hai</li>
+</ul>
+</div>
+
+<div class="course-box" id="n9">
+<h3>Chapter 9: Cabling - RJ45 Color Code T568B</h3>
+<pre>1 Orange-White
+2 Orange
+3 Green-White
+4 Blue
+5 Blue-White
+6 Green
+7 Brown-White
+8 Brown</pre>
+<p>PC to Switch = Straight cable, PC to PC = Cross (ab auto)</p>
+</div>
+
+<div class="course-box" id="n10">
+<h3>Chapter 10: Important Commands CMD Me</h3>
+<pre>ping google.com      // Net chal raha?
+ipconfig             // Mera IP?
+ipconfig /all        // Pura detail
+getmac               // MAC address
+nslookup google.com  // IP pata karo
+tracert google.com   // Rasta dekho
+netstat -an          // Kaunsi site khuli?
+arp -a               // Kaun jude hai?</pre>
+</div>
+
+<div class="course-box" id="n11">
+<h3>Chapter 11: Live Router Setup Practical</h3>
+<ul>
+<li>1 Router power do, LAN cable PC me</li>
+<li>2 Browser me 192.168.0.1 ya 192.168.1.1 likho</li>
+<li>3 Login admin/admin</li>
+<li>4 Wireless > SSID: VishalSharma_WiFi</li>
+<li>5 Password: Vishal@1234 strong lagao</li>
+<li>6 DHCP Enable, Save, Reboot</li>
+</ul>
+</div>
+
+<div class="course-box" id="n12">
+<h3>Chapter 12: Networking Me Job / Career</h3>
+<ul>
+<li>CCNA - Cisco - 1st Job 15000-25000 NOC Engineer</li>
+<li>Hardware & Networking Technician - Har shop me zarurat</li>
+<li>WiFi / CCTV Installer - Per installation 500-1000 in Moranhat</li>
+<li>Next: CCNP, Firewall, Cyber Security</li>
+</ul>
+<p style="color:#22c55e">Free Certificate: Course pura padh ke WhatsApp karo, Vishal Sharma ke naam se certificate dunga.</p>
+</div>
+
+</section>
+
+<section id="htmlcourse" style="background:#111c33">
+<h2>📚 HTML Full Course - FREE (8 Chapters)</h2>
+<p class="sub">Bonus - Website banana seekho</p>
+<div class="course-box"><h3>Lesson 1-8 Summary</h3><p>Intro, Tags, Heading, List, Image, Link, Table, Form, Final Project - Pura code ke saath pehle wali file me hai. Is file me Networking main focus hai.</p>
+<pre>&lt;h1&gt;Vishal Sharma&lt;/h1&gt;
+&lt;p&gt;Computer Education&lt;/p&gt;
+&lt;a href=""&gt;Contact&lt;/a&gt;</pre></div>
+</section>
+
+<footer>© 2026 Vishal Sharma Computer Education - Moranhat | Networking Full Course + HTML Course Free</footer>
+</body>
+</html>
